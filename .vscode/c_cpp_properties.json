@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/usr/local/Cellar/opencv/4.5.0/include/opencv4/opencv2",
+                "/usr/local/Cellar/opencv/4.5.0/include/opencv4",
+                "/usr/local/Cellar/opencv/4.5.0/include/opencv4/opencv2/core"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/g++",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "clang-x64",
+            "compilerArgs": [
+                "/usr/local/Cellar/opencv/4.5.0"
+            ]
+        }
+    ],
+    "version": 4
+}
