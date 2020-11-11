@@ -15,38 +15,20 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
   cv::Mat &output, cv::Point2i location)
 {
   background.copyTo(output);
-
-
-  // start at the row indicated by location, or at row 0 if location.y is negative.
   for(int y = std::max(location.y , 0); y < background.rows; ++y)
   {
-    int fY = y - location.y; // because of the translation
-
-    // we are done of we have processed all rows of the foreground image.
+    int fY = y - location.y;
     if(fY >= foreground.rows)
       break;
-
-    // start at the column indicated by location, 
-
-    // or at column 0 if location.x is negative.
     for(int x = std::max(location.x, 0); x < background.cols; ++x)
     {
-      int fX = x - location.x; // because of the translation.
-
-      // we are done with this row if the column is outside of the foreground image.
+      int fX = x - location.x;
       if(fX >= foreground.cols)
         break;
-
-      // determine the opacity of the foregrond pixel, using its fourth (alpha) channel.
       double opacity =
         ((double)foreground.data[fY * foreground.step + fX * foreground.channels() + 3])
 
         / 255.;
-
-
-      // and now combine the background and foreground pixel, using the opacity, 
-
-      // but only if opacity > 0.
       for(int c = 0; opacity > 0 && c < output.channels(); ++c)
       {
         unsigned char foregroundPx =
@@ -165,21 +147,15 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
 }
   
 		Mat apple = imread("apple.png", IMREAD_UNCHANGED);
-
-		//Mat bg = imread("bg.png", CV_LOAD_IMAGE_UNCHANGED);
 		
 		Mat result;
 		
 		overlayImage(imgOriginal, apple, result, cv::Point(0,0));
 
 		namedWindow("Apple", WINDOW_AUTOSIZE);
-		//namedWindow("BG", CV_WINDOW_AUTOSIZE);
 		
-		
-        //imshow("Thresholded Image", imgThresholded);
         
         Mat imgOriginalFlipped;
-		//Mat appleFlipped;
 		
         //apple = apple + imgLines;
 		imgOriginal = imgOriginal + imgLines;		
@@ -195,23 +171,16 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
         imshow("result", resultFlipped);
         
         
-		//imshow("MyWindow", img);
-        
-        
-        
         if (waitKey(30) == 27)
         {
            cout << "Program ended..." << endl;
            break; 
         }
      }
-     
-    //  cvDestroyAllWindows(); 
-		
 
     return 0;
     
 }
 
-//źródło: http://opencv-srf.blogspot.com/2010/09/object-detection-using-color-seperation.html?m=1
-//żródło: http://jepsonsblog.blogspot.com/2012/10/overlay-transparent-image-in-opencv.html
+//source: http://opencv-srf.blogspot.com/2010/09/object-detection-using-color-seperation.html?m=1
+//source: http://jepsonsblog.blogspot.com/2012/10/overlay-transparent-image-in-opencv.html
