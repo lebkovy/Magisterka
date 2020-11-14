@@ -181,6 +181,3 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
     return 0;
     
 }
-
-//source: http://opencv-srf.blogspot.com/2010/09/object-detection-using-color-seperation.html?m=1
-//source: http://jepsonsblog.blogspot.com/2012/10/overlay-transparent-image-in-opencv.html
