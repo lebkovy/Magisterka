@@ -1,6 +1,11 @@
 # Created by https://www.gitignore.io/api/visualstudiocode
 # Edit at https://www.gitignore.io/?templates=visualstudiocode
 
+jlebiedzinski_269096.aux
+jlebiedzinski_269096.log
+jlebiedzinski_269096.pdf
+jlebiedzinski_269096.synctex.gz
+
 ### VisualStudioCode ###
 .vscode/*
 
