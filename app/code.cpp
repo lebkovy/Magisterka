@@ -10,7 +10,7 @@ using namespace std;
 
 // g++ $(pkg-config --cflags --libs opencv4) -std=c++11 projekt.cpp -o projekt
 
-
+//Funkcja odpowiedzialna za nałożenie na plotno zadanego obrazu
 void overlayImage(const cv::Mat &background, const cv::Mat &foreground, 
   cv::Mat &output, cv::Point2i location)
 {
@@ -52,12 +52,14 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
  {
     VideoCapture cap(0);
 
+    //sprawdzenie dostepu do kamery urzadzenia
     if ( !cap.isOpened() )
     {
          cout << "Cannot open the web cam" << endl;
          return -1;
     }
 
+    //uruchomienie okna z przechwyconym obrazem z kamery
     namedWindow("Control", WINDOW_AUTOSIZE);
 
     int iLowH = 102;
@@ -118,33 +120,25 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
         double dM10 = oMoments.m10;
         double dArea = oMoments.m00;
  
-        if (dArea > 10000)
-        {
+        if (dArea > 10000) {
            int posX = dM10 / dArea;
            int posY = dM01 / dArea;        
          
-           if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0)
-           {
-			    if (waitKey(60) == 113)
-       		   {
-               line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,0,255), 15);
-				  }
-		  	  if (waitKey(60) == 119)
-       		   {
-         	  line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,255,0), 15); 
-          	   }
-				else if (waitKey(60) == 101)
-       		   {
-         	  line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,0,0), 15); 
-          	   }
+           if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0) {
+			        if (waitKey(60) == 113) {
+                line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,0,255), 15);
+				      }
+		  	      if (waitKey(60) == 119) {
+         	      line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,255,0), 15); 
+          	  }
+				      else if (waitKey(60) == 101)
+       		    {
+         	      line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,0,0), 15); 
+          	  }
            }
- 
            iLastX = posX;
            iLastY = posY;
-
-
-
-}
+        }
   
 		Mat apple = imread("apple.png", IMREAD_UNCHANGED);
 		
@@ -158,7 +152,7 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
         Mat imgOriginalFlipped;
 		
         //apple = apple + imgLines;
-		imgOriginal = imgOriginal + imgLines;		
+		    imgOriginal = imgOriginal + imgLines;		
         //flip(apple,appleFlipped,1);
         //imshow("Lines", imgFlipped);
         flip(imgOriginal,imgOriginalFlipped,1);
