@@ -1,0 +1,225 @@
+\documentclass{article}
+\usepackage{polski}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}  
+\usepackage[english]{babel}
+\usepackage[left=2.5cm,right=2.5cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\overfullrule=1mm
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+	backgroundcolor=\color{backcolour},   
+	commentstyle=\color{codegreen},
+	keywordstyle=\color{magenta},
+	numberstyle=\tiny\color{codegray},
+	stringstyle=\color{codepurple},
+	basicstyle=\ttfamily\footnotesize,
+	breakatwhitespace=false,         
+	breaklines=true,                 
+	captionpos=b,                    
+	keepspaces=true,                 
+	numbers=left,                    
+	numbersep=5pt,                  
+	showspaces=false,                
+	showstringspaces=false,
+	showtabs=false,                  
+	tabsize=2
+}
+\lstset{style=mystyle}
+\graphicspath{ {./assets/} }
+\parindent=0pt
+
+
+
+
+\begin{document} %---------------------------------------------------------------------------------------------------------------------% 
+
+\centerline{\textbf{\Large Seminarium magisterskie}}
+\vspace{10mm}
+{\Large Wykorzystanie cyfrowej analizy obrazu w metodykach pracy z dziećmi w wieku przedszkolnym}
+
+\vspace{10mm}
+\centerline{\large Jakub Lebiedziński} 
+\vspace{1mm}
+\centerline{\normalsize {269096}} 
+\vspace{5mm} 
+
+\linespread{1.3} % interlinia dla dalszej zawartości dokumentu = 1.5
+\large % wielkość czcionki dla dalszej zawartości dokumentu
+
+\section*{\textbf{Wstęp}}
+
+Przenieśmy się do roku 1945, właśnie dokonuje się przełom w dziedzinie cyfryzacji i komputeryzacji - pierwszy komputer ujrzał światło dzienne. Enigmatyczna nazwa ENIAC skłania nas do myślenia nad genezą tego słowa. W swojej istocie, nazwa ta, jest tak naprawdę banalna i pochodzi z języka angielskiego od ‘electronic numerical integrator and computer’ \cite{ref1} czyli ‘elektroniczny integrator numeryczny i komputer’. Robi się ciekawiej. Warto w tym miejscu nakreślić ogólne pojęcie o  zautomatyzowanych procesach w 1945 roku. Mam na myśli to, jak ludzie postrzegali wówczas maszyny wykonujące skomplikowane obliczenia matematyczne w znacznie krótszym czasie niż oni sami. Ludzkość w późniejszych latach ‘40 ubiegłego wieku była sceptycznie nastawiona do robotów i maszyn. Głównie dlatego, że ich nie rozumieli - taka natura ludzka, że boimy się tego czego nie jesteśmy wyjaśnić w logiczny sposób. Dzisiaj tj. 80 lat później nie wyobrażamy sobie życia bez współczesnych rozwiązań techniki. Cóż, przynajmniej uważamy to za coś nierealnego, nieosiągalnego. Jak zauważa Monika Frania 'Człowiek żyjący na przełomie XX i XXI w. to świadek eksplozji przemian instrumentarium medialnego' \cite{ref2} Ciężko się nie zgodzić. Nasi dziadkowie pamiętają czasy, w których technologia była im zupełnie obca. Ba, sami doświadczyliśmy okresu, w którym ‘Internet’ było słowem nieznanym, niezrozumiałym. Czym jest tak naprawdę ta cała ‘technologia’, o którą się tu rozchodzi? Według Polskiego Słownika PWN słowo ‘technologia’ \cite{ref3} opiera się na metodach powiązanych z procesem przetwórczym lub produkcji. Technologie informacyjne jako termin są z nami stosunkowo od niedawna. Wraz ze wzrostem znaczeń maszyn i komputerów, przez gromadzenie i agregację danych, aż do ‘targetowania’ użytkowników wspomnianego już Internetu, na znaczeniu zyskały również inne dziedziny nauki, ale i nie tylko. Edukacja jest z nami od zarania dziejów. Już w starożytnej Grecji powstawały pierwsze ‘szkoły’, gdzie słuchacze mogli śledzić wykłady najznamienitszych filozofów ówczesnego świata. Platon, Arystoteles czy Sokrates byli uważani za mistrzów retoryki, etyki czy filozofii. Warto wspomnieć, że nie każdy obywatel antycznego państwa miał obowiązek pobierania nauki. Edukacja była bowiem przywilejem, na który stać było tylko najbogatszych. Dzisiaj jest to nie do pomyślenia. Z czasem jednak edukacja stawała się coraz bardziej dostępna dla niższych warstw społecznych. Dawni nauczyciele wspomagali się w edukowaniu swoich słuchaczy wskaźnikami, elementami natury, mapami, malunkami i tak dalej. Podobnie jest i teraz. Różnicą jest stopień zaawansowania ‘pomagaczy’ i procent ich wykorzystania w szkolnictwie. Celem niniejszej pracy magisterskiej będzie wskazanie na rosnącą rolę technologii w kontekście edukacji w XXI wieku. Skupimy się na dzieciach w wieku przedszkolnym, ponieważ od najmłodszych lat można dostrzec schematy i utrwalanie pewnych zachowań w nauce podstawowych czynności takich jaki mówienie, pisanie czy postrzeganie świata. Józef Bednarek w swojej książce pod tytułem ‘Multimedia w kształceniu’  \cite{ref4} , iż każdy uczeń chce się uczyć, ale to podejście pedagoga jest niezbędnym elementem, aby ta nauka ‘nie poszła w las’. Porównanie ww. Autora tablicy i kredy do telewizji i gier komputerowych wydaje się trafnym porównaniem podkreślającym rolę jaką odgrywa współczesny nauczyciel. Z pomocą przychodzi już wspomniana technologia. Dzieci w wieku przedszkolnym tj. 3-6 lat są niezwykle wrażliwe na bodźce ze świata zewnętrznego. Przy oglądaniu zdjęć, obrazów, malunków ich mózg skupia się na rozpoznawaniu kształtów, kolorów, osób, a z wiekiem potrafi zauważyć analogię pewnych zestawień liter, kolorów, a nierzadko jest w stanie je nazywać. W swojej pracy wykorzystuje autorskie rozwiązanie interaktywnej kolorowanki w czasie rzeczywistym. Ów narzędzie opiera się na rozpoznawaniu kolorów, rysowaniu kształtów oraz stymuluje prawidłowy rozwój dziecka w myśl zasady - nauka poprzez zabawę. Zakresem badań będą przeprowadzenie serii eksperymentów i zapis obserwacji oraz wnioski z zachowań dzieci bawiących się wyżej opisanym narzędziem.
+\section*{\textbf{Multimedia w szkolnictwie}}
+Z biegiem lat zauważamy coraz to nowsze rozwiązania technologiczne wprowadzane począ- wszy od szkół podstawowych, a skończywszy do szkolnictwie wyższym. Kiedyś hitem były tablice multimedialne, które stawały się niemalże wizytówką placówki oświatowej. Tak było kilka lat temu. Rok 2020 okazał się jeszcze bardziej wymagający i zmusił szkoły, organy oświatowe a także samorządy i placówki administracyjne do zakupu wszelkiego rodzaju tabletów, laptopów, notebooków, smartfonów etc. Nagle okazało się, że podstawowy ekwipunek ucznia o wadze 11 kilogramów został zastąpiony jednym 800g tabletem, w którym znajdują się elektroniczne wersje niezbędnych do nauki podręczników i ćwiczeń. W przedszkolach również zauważa się wzrost technologii wykorzystywanej do nauki dzieci. Co prawda komputery już wcześniej były obecne w salach zabaw, a dzieci potrafiły w mniej lub bardziej logiczny sposób wyjaśnić obecność elektroniki, ale elektroniczna kolorowana to coś całkiem nowego dla całego półświatka przedszkolnego. 
+\section*{\textbf{Język C++}}
+Zapewne każdy aspirujący programista musiał miał styczność z tym językiem. Prosty, niewy- magający, wybaczający błędy - idealny do rozpoczęcia przygody z programowaniem. Język C++ to nie jest “związek” tylko na chwile. Jego zastosowanie można zaobserwować w takich produktach jak Windows, Mac OS, pakiet Adobe czy Office. Dlaczego? Odpowiedź jest prosta - język C++ jest bardzo wydajny i zużywa o wiele mniej zasobów przy kompilacji. Jak słusznie zauważa Karol Kuczmarski w swojej książce “Kurs C++. Od zera do gier kodera” \cite{ref5} mocnym atutem języka C++ jest jego popularność i dostępność rozwiązań. Cytując jego słowa można stwierdzić, że “[...] C++ zdaje się być bardziej uniwersalny (od języka Delphi, przyp. tłum.). Dobrze rozumie się z ważnymi dla nas bibliotekami graficznymi, jest także bardzo szybki i posiada duże możliwości” Jak to się stało, że język C++ osiągnął taką przewagę nad innymi językami? Żeby odpowiedzieć na to pytanie należy cofnąć się do początków lat siedemdziesiątych kiedy to niejaki Dennis Ritchie finalnie zaimplementował z pomocą języka C jądro systemu operacyjnego Unix. Uznaje się to wydarzenie za początek dominacji języka C (i jego późniejszych ewolucji, o których 
+wspomnę w dalszej części). Po roku 1980 język C (a także jego późniejsza wersja z dwoma plusami) wiódł prym w programowaniu systemów i aplikacji czego dowodem był produkt Microsoftu pod nazwą Windows, przy którego budowanie w znacznej mierze opierano się na wyżej wymienionym języku programowania. Warto zaznaczyć, że język C/C++ posiadał bardzo ważną cechę jaką niewątpliwie jest możliwość przenoszenia go na inne urządzenia. Dodatkowym atutem, o którym trzeba powiedzieć jest to, że większość dzisiejszych sterowników do kart graficznych, dźwiękowych i tak dalej są pisanie niskopoziomowo z wykorzystaniem właśnie języka C/C++.
+\section*{\textbf{Ewolucji ciąg dalszy czyli język C Sharp}}
+W końcówce lat dziewięćdziesiątych zaczęto zastanawiać się na stworzeniem od podstaw języka programowania opartego na obiektowości, który mógłby rywalizować z zyskującą popularność Javą. Narodził się pomysł utworzenia zespołu projektowego, którego zadaniem byłoby stworzenie mocnego konkurenta na “rynku obiektowości” w myśl zasady głoszonej przez model PME (Properties - Methods - Events). Na czele projektu stanął charyzmatyczny Duńczyk Anders Hejlsberg - znany i ceniony programista w środowisku informatycznym. W swoim dorobku miał doświadczenie w pracy nad takimi językami jak wspomniany już wcześniej Delphi, Pascal, a później również TypeScript. W swojej książce pod tytułem “The C\# Programming Language” \cite{ref6} wspominał, że praca przy nowym języku była dla niego nie lada wyzwaniem, ale zaznaczył, że traktował to jako ciekawą rozrywkę, żeby nie powiedzieć zabawę. Dodał, że miarą rozwiązywania problemów jest dodanie wartości tworzonemu produktowi przy poszukiwaniu solucji.
+\section*{\textbf{Programowanie GPU}}
+Jak wspomniałem jedną z zalet języka C/C++ jest szeroki zasób i dostępność do bibliotek o bardzo różnym charakterze. Od napisania mikrokontrolera przez fotokomórkę aż po grę komputerową. W dzisiejszym świecie coraz więcej elementów otaczającego nas świata zależy właśnie od technologii. Częściej musimy zasięgnąć opinii przysłowiowych “informatyków”, aby Ci wytłumaczyli nam chociażby jak kupić bilet na autobus z poziomu telefonu komórko- \ wego. Wraz z rozwojem sektora oprogramowania graficznego na znaczeniu, w kwestii mocy obliczenio- \ wej, zyskały układy graficzne oparte głównie na dwóch architekturach - NVIDIA CUDA oraz OpenCL. Zauważono, że obecnie układy te pozwalają na wykonanie serii bardziej skomplikowanych operacji niż dotychczas sądzono. Nowoczesne procesory graficzne są w stanie generować żądany obraz w czasie rzeczywistym i co więcej są w stanie zmodyfikować go według określonych zasad ustanowionych przez programistę. Dzieje się tak, gdyż układ CPU komunikuje się z układem GPU z pomocą specjalnego API (Application Programming Interface) w charakterze komunikatora pomiędzy dwoma układami. Poniższy schemat powinien nieco rozjaśnić powyższe rozważania.
+\begin{center}
+\includegraphics[width=10cm]{gpu}
+\end{center}
+Dzięki takiemu rozwiązaniu powszechne stało się wykorzystanie mocy obliczeniowej procesorów graficznych w tworzeniu oprogramowania wykorzystującego funkcje przetwarzania obrazu przechwyconego z kamery. Przykładem takiego rozwiązania jest na przykład rozpoznawanie twarzy w nowoczesnych telefonach, skanowanie numerów rejestracyjnych samocho- dów wyjeżdżających z parkingów, algorytmy rozpoznawania elementów na obrazie w celu identyfikacji i opisania rzeczy znajdujących się przed obiektywem kamery. W nowych samochodach można znaleźć system odpowiadające za śledzenie toru, po którym porusza się pojazd, albo oprogramowanie odpowiadające za detekcję znaków drogowych i stosowanie odpowiednich ograniczeń wbudowanych w oprogramowanie komputera pokładowego. Można by wymieniać i wymieniać, ale żeby “namacalnie” (a przynajmniej w teorii) móc poczuć wcześniej wspomniany skok technologiczny warto chociażby zdobyć i porównać zdjęcia dwóch gier wideo, których daty premier oddalone są na osi czasu o raptem 20 lat. W ciągu tak krótkiego czasu zrobiono więcej niż przez ostatnie 50 lat w kwestii motoryzacji (chociaż Elon Musk każe sądzić inaczej). Jestem bardzo ciekaw jak będzie wyglądać rozgrywka za drugie tyle lat. Prawdopodobnie niemożliwym zadaniem będzie odróżnienie gry od rzeczywistości.
+Sekretem realistycznej grafiki w grach komputerowych jest skomplikowanie algorytmów odpowiedzialnych za renderowanie w czasie rzeczywistym tekstur w bardzo wysokiej rozdzielczości. Swoim artykule Christoph Liedtke z redakcji GameStar (gamestar.de) \cite{ref7} zwraca szczególną uwagę na nowe efekty graficzne, które pojawiły się wraz z rozwojem mocy obliczeniowej kart graficznych “Również efekty graficzne takie jak np. mapowanie wypukłości (bump mapping), multiteksturowanie czy też oparta na rzeczywistych obrazach technika fotogrametrii, a także pakiety tekstur o wysokiej jakości tworzone przez fanów, sprawiają że pod względem graficznym gry stają się coraz bardziej imponujące.”\\
+\begin{center}
+\includegraphics{grafika}
+\end{center}
+\section*{\textbf{Cyfrowa analiza obrazu}}
+Aby wyjaśnić sposób działania algorytmów odpowiedzialnych za analizę fotografii czy obrazu z aparatu/kamery trzeba nieco cofnąć się w czasie do klasycznej fotografii.
+W czasach, gdy ludzie chcieli upamiętnić ważną chwilę trudno szukać jako takiej technologii znanej nam dzisiaj. Czy można powiedzieć, że wraz z rozwojem fotografii cyfrowej, wymyślono aparat na nowo?. O tym za chwilę. Na ten moment zostańmy jeszcze chwilę w tematach, jak to się dziś ładnie mówi - retro. Klasyczne, żeby nie powiedzieć stare, aparaty fotograficzne działają w oparciu o nośniki wykorzystujące materiały światłoczułe (np. klisze). Trzeba zaznaczyć, że klasyczny nie jest równy analogowy. W rozumieniu analogowy mamy na myśli te, które nie wykorzystują sygnału cyfrowego do zapisu obrazu na materiale światłoczułym. Błędne określenie aparatów analogowych klasycznymi pojawiło się wraz z rozwojem fotografii cyfrowej. Trzeba z tego zapamiętać tyle, że w dawnych aparatach klasycznych nie stosowano zapisu obrazu za pomocą sygnału analogowego. Tymczasem świat poszedł naprzód, a to co najważniejsze, ludzie zaczęli “zapamiętywać” swoje życie na cyfrowych matrycach nowoczesnych aparatów. Cyfrowy zapis od analogowego różni się tym, że w tym pierwszym fotografia utrwalana jest binarnie na matrycach cyfrowych, które po błyskawicznym “przetłumaczeniu” oddaje obraz w różnych barwach reprezentowanych przez ciąg zero-jedynkowy. Każdy taki obraz składa się z setek, tysięcy pikseli. Każdemu pikselowi odpowiada konkretny obszar i zapis na ww. cyfrowej matrycy. Innymi słowy, działanie aparatu takie same, ale zapis już niekoniecznie. Mając zapis binarny zdjęcia możemy dzięki algorytmom zastosować szereg operacji mających na celu np. rozpoznanie tekstu, detekcję ruchu, zliczanie elementów czy wspomnianą już wcześniej asystę dla kierowcy przy zjeździe z pasa na jezdni. Maszyna mając zero-jedynkowe przedstawienie fotografii widzi macierz liczb, która zawiera reprezentację barw.
+\begin{center}
+\includegraphics[width=10cm]{macierz}
+\end{center}
+Jest to jedna ze struktur obrazów cyfrowych, które “rozumie” maszyna. W głębszym rozumieniu, pozyskiwanie obrazów cyfrowych i translację ich na język komputerowy nazywamy dyskretyzacją obrazu. Ryszard Tadeusiewicz i Przemysław Korohoda w “Komputerowej analizie i przetwarzanie obrazów” \cite{ref8} zaznaczają, że ów sztuczna reprezentacja i sposób jej kreowania posiada swoje ograniczenia wynikające z wydajności dzisiejszych maszyn. Niestety (a może i stety) nie osiągnęliśmy jeszcze poziomu maszyn, które można byłoby określić szybszymi i mądrzejszymi niż zmysły ludzkie (w tym wypadku mam na myśli zmysł wzroku). Na ten moment uważa się, że przybliżone przetwarzanie danych w czasie rzeczywistym przez ludzkie oko plasuje się na poziomie około stu megabajtów na sekundę co przekracza możliwości komputerów w znanym nam świecie. Być może, a raczej wielce prawdopodobne, jest to, że maszyna oparta o technologię kwantową sprostałaby wyżej wymienionym wymaganiom, ale na tę chwilę musimy te rewelacje odsunąć na bok i skupić się nad dostępnością dzisiejszych rozwiązań. Co możemy zrobić, aby ograniczyć reprezentację obrazu? Ryszard Tadeusiewicz i Przemysław Korohoda wymieniają między innymi możliwość ograniczenia fotografii poprzez zmniejszenie ilości szczegółów, ale też uproszczenie i ujednolicenie stanów elementów (na przykład poprzez wykorzystanie czarno-białej palety barw). Autorzy sugerują również analizowanie obrazu płaskiego zamiast przestrzennego i statycznego zamiast dynamicznego. Ten ostatni przypadek odnosi się do ciągu klatek (obrazów) dlatego w dalszej części nie będę go brał pod uwagę. Warto mieć to jednak na uwadze. Dzisiejsze algorytmy przetwarzające fotografie wykorzystują jeden z dwóch sposobów umieszczenia cyfrowych odpowiedników elementów obrazu (pikseli). Są to: heksagonalne i kwadratowe.
+\begin{center}
+\includegraphics[width=15cm]{dyskretyzacja}
+\end{center}
+Wspomniana macierz reprezentująca barwy, a dokładniej nasycenie jednej z trzech bar modelu RGB (Red - Green - Blue), służy komputerowi jako źródło kilku istotnych danych. Maszyna rozpoznaje nasycenie, barwę oraz potrafi rozpoznać co znajduje się na pierwszym, drugim planie i tak dalej. Niemniej jednak to wciąż za mało, aby być pewnym otrzymanych wyników. Na dane wejściowe nierzadko stosuje się szereg zabiegów mających na celu zniwelowanie niedoskonałości powstałych przy wykonywaniu fotografii.
+Zanim jednak zajmiemy się wyżej wymienionymi operacjami należy sobie wyjaśnić z czego biorą się błędny przy pracy ze źle przygotowanymi danymi wejściowymi. Niestety czynnik ludzki ma tutaj ogromne znaczenie dla wysokiej wartości tych danych. Często nie przywiązujemy należytej uwagi do jakości aparatów i ich podzespołów co prowadzi od początku do niewystarczającej ostrości, naświetlenia i tym podobne. Również pośpiech nie jest dobrym doradcą w tych sprawach. Ważną cechą dobrego zdjęcia jest odpowiednie światło i ostrość - co w przypadku obiektów poruszających się jest niezwykle utrudnione, żeby nie powiedzieć niemożliwe. 
+\section*{\textbf{Operacje na fotografiach}}
+Usuwanie szumu z fotografii nie jest czymś nowym. Zasada działania algorytmów “odszumiających” jest całkiem prosta w wytłumaczeniu. Jak wcześniej wspomniałem, komputer widzi obraz jako macierz z setkami małych punktów (pikselami). Filtr odpowiedzialny za usuwanie szumu sprawdza każdy element fotografii i jej bliskie sąsiedztwo analizując wartości pikseli. Założeniem jest to, że każdy punkt o przybliżonej barwie, naświetleniu powinien mieć podobne wartości, a każde odchylenie od tej reguły traktowane jest jako niepożądane zachowanie i modyfikowane w zależności od parametrów “dobrych pikseli”. Metody usuwania szumu są dwie - poprzez średnią arytmetyczną i medianę. W przypadku pierwszej filtr nadpisuje analizowany obszar wartościami średnimi obliczonymi na podstawie barwy i ostrości. W drugiej metodzie piksel otrzymuję medianę z otaczającego go sąsiedztwa co czyni obraz bardziej wyrazistym, ale może powodować skrzywienia i wpływać negatywnie na geometrię obrazu.
+\begin{center}
+\includegraphics[width=15cm]{szum}
+\end{center}
+\newpage
+\begin{lstlisting}[language=C++, caption=Początek wywołania]
+	VideoCapture cap(0);
+	
+	//sprawdzenie dostepu do kamery urzadzenia
+	if ( !cap.isOpened() )
+	{
+		cout << "Cannot open the web cam" << endl;
+		return -1;
+	}
+	
+	//uruchomienie okna z przechwyconym obrazem z kamery
+	namedWindow("Control", WINDOW_AUTOSIZE);
+\end{lstlisting}
+
+Powyższy fragment kodu jest pierwszymi linijkami głównej metody wywołującej o nazwie main. Na początku sprawdzam czy mamy dostęp do kamery urządzenia. Następnie tworzę okno o automatycznych rozmiarach (skalowane w zależności od ustawień komputera, na którym uruchamiany jest kod).
+
+\begin{lstlisting}[language=C++, caption=Klawisze funkcyjne]
+	if (dArea > 10000) {
+		int posX = dM10 / dArea;
+		int posY = dM01 / dArea;        
+		
+		if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0) {
+			if (waitKey(60) == 113) {
+				line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,0,255), 15);
+			}
+			if (waitKey(60) == 119) {
+				line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,255,0), 15); 
+			}
+			else if (waitKey(60) == 101)
+			{
+				line(imgLines, Point(posX, posY), Point(iLastX, iLastY), Scalar(0,0,0), 15); 
+			}
+		}
+		iLastX = posX;
+		iLastY = posY;
+	}
+\end{lstlisting}
+
+Powyżej zaimplementowane jest reagowanie programu na naciśnięte klawisze klawiatury komputera. Każdy przycisk zakodowany jest w formacie liczbowej i ma swoje odzwierciedlenie w tablicy znaków ASCII
+\begin{figure}
+	\centering
+	\includegraphics[width=15cm]{ascii}
+	\caption{Tablica znaków ASCII}
+\end{figure}
+
+\newpage
+
+\section*{\textbf{Fragmenty kodu oprogramowania z wyjaśnieniami} }
+
+\begin{lstlisting}[language=C++, caption=Nakładanie obrazu do kolorowania]
+//Funkcja odpowiedzialna za nalozenie na plotno zadanego obrazu
+void overlayImage(const cv::Mat &background, const cv::Mat &foreground, 
+cv::Mat &output, cv::Point2i location)
+{
+	background.copyTo(output);
+	for(int y = std::max(location.y , 0); y < background.rows; ++y)
+	{
+		int fY = y - location.y;
+		if(fY >= foreground.rows)
+		break;
+		for(int x = std::max(location.x, 0); x < background.cols; ++x)
+		{
+			int fX = x - location.x;
+			if(fX >= foreground.cols)
+			break;
+			double opacity =
+			((double)foreground.data[fY * foreground.step + fX * foreground.channels() + 3])
+			
+			/ 255.;
+			for(int c = 0; opacity > 0 && c < output.channels(); ++c)
+			{
+				unsigned char foregroundPx =
+				foreground.data[fY * foreground.step + fX * foreground.channels() + c];
+				unsigned char backgroundPx =
+				background.data[y * background.step + x * background.channels() + c];
+				output.data[y*output.step + output.channels()*x + c] =
+				backgroundPx * (1.-opacity) + foregroundPx * opacity;
+			}
+		}
+	}
+}
+\end{lstlisting}
+
+Funkcja overlayImage z argumentami: background, foreground, output i location jest odpo- wiedzialna za nałożenie na przechwycony obraz z kamery durgiej warstwy - w tym wypadku jest to fragment obrazka do pokolorowania (same kontury).
+Funkcja w linijce szóstej rozpoczy- na pętle, której zadaniem jest w osiach x i y przychodzących macierzy background i foreground obliczenie i ustawienie w środku generowanego okna obrazu. W linijce 11 zaczyna się sprawdzenie dla osi x po uprzedmim sprawdzeniu osi y. Następnie po ustawniu punktów lokalizacyjnych, w linijce 20 nanoszone są zmiany na ekran poprzez przypisanie mapie nazwie data, która jest elementem zarowno macierzy background jak i foreground.
+
+\newpage
+
+
+
+
+\renewcommand\lstlistlistingname{Fragmenty kodu}
+\begin{lstlistoflistings}
+\end{lstlistoflistings}
+
+
+\newpage %każdy punkt główny od nowej linii
+\renewcommand\refname{\section*{Bibliografia}}
+\begin{thebibliography}{30}\linespread{1}\normalsize{
+		%{11} - max liczba źródeł bibliograficznych
+		\bibitem{ref1} 
+		Wikipedia.org
+		\bibitem{ref2}	
+		Wybrane dylematy współczesnej edukacji w kontekście "zmediatyzowanej rzeczywistości" - Frania M.
+		\bibitem{ref3}	
+		Polski Słownik PWN
+		\bibitem{ref4}	
+		Multimedia w kształceniu - Bednarek J.
+		\bibitem{ref5}
+		Karol Kuczmarski - Kurs C++. Od zera do gier kodera
+		\bibitem{ref6}
+		Anders Hejlsberg - The C\# Programming Language
+		\bibitem{ref7}
+		Christoph Liedtke - Ewolucja grafiki 3D w grach komputerowych
+		\bibitem{ref8}
+		Ryszard Tadeusiewicz i Przemysław Korohoda - Komputerowa analiza i przetwarzanie obrazów
+		
+		\bibitem{ref25}
+		Nowe media, technologie i trendy w edukacji - Frania M.
+		\bibitem{ref26}
+		Nowe technologie informacyjne w edukacji - Adamkiewicz J.
+		\bibitem{ref27}
+		Multimedia w kształceniu - Bednarek J.
+		\bibitem{ref28}
+		Komputer jako środek dydaktyczny w edukacji wczesnoszkolnej - Hassa A.
+		\bibitem{ref29}
+		Media w edukacji - Gajda J.
+		\bibitem{ref30}
+		Słownik terminów i pojęć badań jakościowych nad edukacją - Jagieła J.
+	}
+\end{thebibliography}
+
+\end{document}
