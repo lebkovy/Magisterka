@@ -1,0 +1,25 @@
+\babel@toc {english}{}
+\contentsline {section}{\numberline {1}Historia edukacji w pojęciu nauczania najmłodszych}{3}%
+\contentsline {subsection}{\numberline {1.1}Edukacja kiedyś a edukacja dziś}{3}%
+\contentsline {subsection}{\numberline {1.2}Współczesny nauczyciel}{5}%
+\contentsline {subsection}{\numberline {1.3}Edukacja dzieci w wieku przedszkolnym}{6}%
+\contentsline {section}{\numberline {2}Multimedia w szkolnictwie}{8}%
+\contentsline {subsection}{\numberline {2.1}Technologiczne BOOM}{8}%
+\contentsline {section}{\numberline {3}Technologie wykorzystywane w analizie obrazów}{10}%
+\contentsline {subsection}{\numberline {3.1}C/C++}{10}%
+\contentsline {subsection}{\numberline {3.2}Python}{11}%
+\contentsline {subsection}{\numberline {3.3}Ewolucji ciąg dalszy czyli język C Sharp (C####)}{12}%
+\contentsline {subsection}{\numberline {3.4}C/C++ versus C Sharp}{13}%
+\contentsline {section}{\numberline {4}Programowanie GPU}{14}%
+\contentsline {subsection}{\numberline {4.1}Procesory graficzne}{14}%
+\contentsline {subsection}{\numberline {4.2}Cyfrowa przedstawienie fotografii}{20}%
+\contentsline {subsection}{\numberline {4.3}Operacje na fotografiach}{23}%
+\contentsline {subsection}{\numberline {4.4}Rozpoznawanie twarzy}{24}%
+\contentsline {subsection}{\numberline {4.5}Przekształcenia obrazów}{27}%
+\contentsline {subsection}{\numberline {4.6}Rozpoznawanie obiektów}{29}%
+\contentsline {section}{\numberline {5}Projekt interaktywnej kolorowanki wykorzystującą cyfrową analizę obrazu z wykorzystaniem sztucznej inteligencji}{31}%
+\contentsline {subsection}{\numberline {5.1}Kod aplikacji}{31}%
+\contentsline {subsection}{\numberline {5.2}Cel badania}{34}%
+\contentsline {subsection}{\numberline {5.3}Opis badania}{35}%
+\contentsline {subsection}{\numberline {5.4}Wyniki badania}{35}%
+\contentsline {subsection}{\numberline {5.5}Wnioski badania}{35}%
