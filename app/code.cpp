@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <string>
 
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
@@ -9,7 +9,7 @@ using namespace cv;
 using namespace std;
 
 
-// g++ $(pkg-config --cflags --libs opencv4) -std=c++11 projekt.cpp -o projekt
+// g++ $(pkg-config --cflags --libs opencv4) -std=c++11 code.cpp -o app
 
 //Funkcja odpowiedzialna za nałożenie na plotno zadanego obrazu
 void overlayImage(const cv::Mat &background, const cv::Mat &foreground, 
@@ -145,7 +145,7 @@ void overlayImage(const cv::Mat &background, const cv::Mat &foreground,
 		
 		Mat result;
 		
-		overlayImage(imgOriginal, apple, result, cv::Point(0,0));
+		overlayImage(imgOriginal, apple, result, cv::Point(300,100));
 
 		namedWindow("Apple", WINDOW_AUTOSIZE);
 		

@@ -4,11 +4,12 @@
             "name": "Mac",
             "includePath": [
                 "/usr/local/include/c++/10.2.0/**",
-                "/usr/local/Cellar/opencv/4.5.0/include/**"
+                "/usr/local/Cellar/opencv/4.5.0/include/**",
+                "/usr/local/include/opencv4/"
             ],
             "defines": [],
             "macFrameworkPath": [],
-            "compilerPath": "",
+            "compilerPath": "/usr/bin/g++",
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
             "intelliSenseMode": "macos-gcc-x64"
